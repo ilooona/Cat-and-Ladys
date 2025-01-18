@@ -1,0 +1,60 @@
+.game {
+    width: 600px;
+    height: 200px;
+    border-bottom: 1px solid #000;
+    margin: auto;
+}
+
+#cat {
+    width: 50px;
+    height: 50px;
+    background-image: url(img/cat.png);
+    background-size: 50px 50px;
+    position: relative;
+    top: 150px; 
+}
+
+#lady {
+    width: 40px;
+    height: 40px;
+    background-image: url(img/lady.png);
+    background-size: 40px 40px;
+    position: relative;
+    top: 110px; 
+    left: 560px; 
+    animation: ladyMov 2s infinite linear; 
+}
+
+@keyframes ladyMov {
+    0% {
+        left: 560px; 
+    }
+    100% {
+        left: -10px; 
+    }
+}
+
+.jump {
+    animation: jump 0.3s linear;
+}
+
+@keyframes jump {
+    0% {
+        top: 150px; 
+    }
+    30% {
+        top: 100px;
+    }
+    50% {
+        top: 70px; 
+    }
+    70% {
+        top: 80px; 
+    }
+    80% {
+        top: 130px; 
+    }
+    100% {
+        top: 150px; 
+    }
+} 
